@@ -60,3 +60,11 @@ small {
 .weather-temperature a {
   text-decoration: none;
 }
+
+.weather-app .active {
+  color: #202124;
+  cursor: default;
+}
+.weather-app .active:hover {
+  text-decoration: none;
+}
