@@ -19,7 +19,7 @@ function formatDate(timestamp) {
   ];
   let temp = "" + (hours > 12 ? hours - 12 : hours);
   if (hours == 0) temp = "12";
-  temp += (minutes < 10 ? ":0" : ":") + minutes;
+  temp += `:${minutes}`;
   temp += hours >= 12 ? " P.M." : " A.M.";
   let day = days[date.getDay()];
   return `${day} ${temp}`;
